@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  background-color: hwb(245 47% 9%);
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  position: relative;
+}
+
+h1 {
+  color: #59ff00;
+  margin-top: 1rem;
+}
+
+button#audioBtn {
+  margin: 1rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  background-color: #f3971b;
+  color: white;
+}
+
+.full-date {
+  font-size: 1.5rem;
+  color: hwb(87 4% 92%);
+  margin: 10px 0;
+}
+
+.digital-clock {
+  font-size: 3rem;
+  color: hsl(36, 19%, 89%);
+  border: 2px solid hsl(0, 12%, 8%);
+  padding: 0.5rem;
+  margin: 10px auto;
+  display: inline-block;
+}
+
+/* Layout */
+.main {
+  display: flex;
+  padding: 2em;
+  height: 70vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.clockbox,
+#clock {
+  width: 100%;
+}
+
+/* Clock styles */
+.circle {
+  fill: none;
+  stroke: rgb(114, 10, 10);
+  stroke-width: 15;
+  stroke-miterlimit: 10;
+}
+
+.mid-circle {
+  fill: #000;
+}
+
+.hour-marks {
+  fill: none;
+  stroke: #000;
+  stroke-width: 9;
+  stroke-miterlimit: 10;
+}
+
+.hour-arm {
+  fill: none;
+  stroke: #000;
+  stroke-width: 17;
+  stroke-miterlimit: 10;
+}
+
+.minute-arm {
+  fill: none;
+  stroke: #000;
+  stroke-width: 11;
+  stroke-miterlimit: 10;
+}
+
+.second-arm {
+  fill: none;
+  stroke: aquamarine;
+  stroke-width: 4;
+  stroke-miterlimit: 10;
+}
+
+.sizing-box {
+  fill: none;
+}
+
+#hour,
+#minute,
+#second {
+  transform-origin: 300px 300px;
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Footer styling */
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+  background-color: #f5f1f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.9rem;
+}
+
+footer a {
+  text-decoration: none;
+  margin-left: 5px;
+}
+
+footer a:hover {
+  color: skyblue;
+}
